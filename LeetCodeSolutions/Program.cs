@@ -1,5 +1,4 @@
-﻿using Easy._13.RomantoInteger;
-using Medium._912.SortanArray;
+﻿using Medium._5.LongestPalindromicSubstring;
 
 namespace LeetCodeSolutions;
 
@@ -7,14 +6,49 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        int[] a = { 8, 7, 12, 548, 63, 21, 1, 78, 16, 34 };
-        int[] b = Solution912.SortArray(a);
-        foreach (var item in b)
-        {
-            Console.Write(item + ", ");
-        }
+        Solution5 solution5 = new Solution5();
+        Console.WriteLine(solution5.LongestPalindrome("aa"));
 
     }
+
+    static public void MainMerge(int[] numbers, int left, int mid, int right)
+    {
+        int[] temp = new int[25];
+        int i, eol, num, pos;
+        eol = (mid - 1);
+        pos = left;
+        num = (right - left + 1);
+
+        while ((left <= eol) && (mid <= right))
+        {
+            if (numbers[left] <= numbers[mid])
+                temp[pos++] = numbers[left++];
+            else
+                temp[pos++] = numbers[mid++];
+        }
+        while (left <= eol)
+            temp[pos++] = numbers[left++];
+        while (mid <= right)
+            temp[pos++] = numbers[mid++];
+        for (i = 0; i < num; i++)
+        {
+            numbers[right] = temp[right];
+            right--;
+        }
+    }
+
+    static public void SortMerge(int[] numbers, int left, int right)
+    {
+        int mid;
+        if (right > left)
+        {
+            mid = (right + left) / 2;
+            SortMerge(numbers, left, mid);
+            SortMerge(numbers, (mid + 1), right);
+            MainMerge(numbers, left, (mid + 1), right);
+        }
+    }
+
 
     public int[] SortArray(int[] array, int leftIndex, int rightIndex)
     {
