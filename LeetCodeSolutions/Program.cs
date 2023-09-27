@@ -1,4 +1,4 @@
-﻿using Medium._5.LongestPalindromicSubstring;
+﻿using Medium._6.ZigzagConversion;
 
 namespace LeetCodeSolutions;
 
@@ -6,8 +6,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Solution5 solution5 = new Solution5();
-        Console.WriteLine(solution5.LongestPalindrome("aa"));
+        Solution6 solution6 = new Solution6();
+        Console.WriteLine(solution6.Convert("ABDS", 1));
 
     }
 
