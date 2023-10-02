@@ -1,4 +1,6 @@
-﻿using Medium._6.ZigzagConversion;
+﻿using Medium._1143.LongestCommonSubsequence;
+using Medium._6.ZigzagConversion;
+using Medium._7.ReverseInteger;
 
 namespace LeetCodeSolutions;
 
@@ -6,8 +8,8 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Solution6 solution6 = new Solution6();
-        Console.WriteLine(solution6.Convert("ABDS", 1));
+        Solution1143 solution = new Solution1143();
+        Console.WriteLine(solution.LongestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd"));
 
     }
 
