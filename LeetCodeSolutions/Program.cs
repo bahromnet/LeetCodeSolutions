@@ -1,6 +1,5 @@
-﻿using Medium._1143.LongestCommonSubsequence;
-using Medium._6.ZigzagConversion;
-using Medium._7.ReverseInteger;
+﻿using Medium._11.ContainerWithMostWater;
+using System.Diagnostics;
 
 namespace LeetCodeSolutions;
 
@@ -8,9 +7,12 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Solution1143 solution = new Solution1143();
-        Console.WriteLine(solution.LongestCommonSubsequence("pmjghexybyrgzczy", "hafcdqbgncrcbihkd"));
-
+        Solution11 solution11 = new Solution11();
+        Stopwatch stopwatch = new();
+        stopwatch.Start();
+        Console.WriteLine(solution11.MaxArea(1, 8, 6, 2, 5, 4, 8, 3, 7));
+        stopwatch.Stop();
+        Console.WriteLine(stopwatch.Elapsed);
     }
 
     static public void MainMerge(int[] numbers, int left, int mid, int right)
