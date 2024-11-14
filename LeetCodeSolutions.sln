@@ -5,11 +5,13 @@ VisualStudioVersion = 17.6.33723.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeetCodeSolutions", "LeetCodeSolutions\LeetCodeSolutions.csproj", "{063643FC-D095-4108-A707-CE86519113AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Easy", "Easy\Easy.csproj", "{A843EC90-7144-4189-8DF8-89A4084EC2FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Easy", "Easy\Easy.csproj", "{A843EC90-7144-4189-8DF8-89A4084EC2FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Medium", "Medium\Medium.csproj", "{794115B3-32D0-4EE0-8629-591F3F47405F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Medium", "Medium\Medium.csproj", "{794115B3-32D0-4EE0-8629-591F3F47405F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hard", "Hard\Hard.csproj", "{3CA3346F-7D8F-4D05-AAEC-B8FE377AF7E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hard", "Hard\Hard.csproj", "{3CA3346F-7D8F-4D05-AAEC-B8FE377AF7E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeetCode75", "LeetCode75\LeetCode75.csproj", "{ED0AF2D0-263B-4997-A469-DAFCA28BC8B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{3CA3346F-7D8F-4D05-AAEC-B8FE377AF7E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA3346F-7D8F-4D05-AAEC-B8FE377AF7E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA3346F-7D8F-4D05-AAEC-B8FE377AF7E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED0AF2D0-263B-4997-A469-DAFCA28BC8B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED0AF2D0-263B-4997-A469-DAFCA28BC8B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED0AF2D0-263B-4997-A469-DAFCA28BC8B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED0AF2D0-263B-4997-A469-DAFCA28BC8B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
