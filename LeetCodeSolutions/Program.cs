@@ -1,6 +1,4 @@
-﻿using Medium._11.ContainerWithMostWater;
-using Medium._12.IntegertoRoman;
-using System.Diagnostics;
+﻿using LeetCode75.Solutions;
 
 namespace LeetCodeSolutions;
 
@@ -8,12 +6,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        Solution12 solution12 = new Solution12();
-        Stopwatch stopwatch = new();
-        stopwatch.Start();
-        Console.WriteLine(solution12.IntToRoman(68));
-        stopwatch.Stop();
-        Console.WriteLine(stopwatch.Elapsed);
+        Console.WriteLine(MergeStringsAlternately_1768.MergeAlternately("ab", "pqrs"));
     }
 
     static public void MainMerge(int[] numbers, int left, int mid, int right)
